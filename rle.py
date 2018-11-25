@@ -6,6 +6,7 @@ def rle_to_mask(rle, shape=shape):
 	rle = rle.split()
 	start = np.array(rle[0:][::2],dtype=int)
 	length = np.array(rle[1:][::2],dtype=int)
+	start -= 1
 	ends = start + length
 
 	mask = np.zeros(768*768, dtype=np.uint8)
