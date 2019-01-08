@@ -1,6 +1,7 @@
 import numpy as np
 
 #Run length encoding to mask function
+#Test commit
 shape=(768,768)
 def rle_to_mask(rle, shape=shape):
 	rle = rle.split()
